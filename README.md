@@ -190,6 +190,14 @@ English B2
 <br />
 
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile/streak-dark.svg" />
+  <img height="170" src="./profile/streak-light.svg" alt="GitHub streak stats" />
+</picture>
+
+<br />
+<br />
+
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph-tan-two.vercel.app/graph?username=flordelcastillo&hide_border=true&area=true&theme=react-dark" />
   <img src="https://github-readme-activity-graph-tan-two.vercel.app/graph?username=flordelcastillo&hide_border=true&area=true&theme=github-light" alt="Activity graph" />
 </picture>
