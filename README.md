@@ -1,6 +1,6 @@
 ## Florencia del Castillo
 
-**Cloud & Software · AWS.** Construyo infraestructura serverless y en contenedores, y documento las
+**Analista en Sistemas · Cloud & Software · AWS.** Construyo infraestructura serverless y en contenedores, y documento las
 decisiones detrás de cada proyecto. 
 Ayudante de cátedra en la UNViMe. 
 Villa Mercedes, San Luis 🇦🇷
@@ -108,7 +108,7 @@ Es serverless de punta a punta: CloudFront + S3, una Lambda, DynamoDB y SAM, tod
 
 ## Sobre mí
 
-Estudio Ingeniería en Sistemas de Información en la UNViMe (2022-presente) y soy **ayudante de
+Soy **Analista en Sistemas** y estudio Ingeniería en Sistemas de Información en la UNViMe (2022-presente). También soy **ayudante de
 cátedra** en *Expresión y Resolución de Problemas y Algoritmos* y *Programación I*. Co-fundé el
 **Club de Programación de la UNViMe** y di talleres y charlas en la Semana de la Ingeniería: Git,
 HTML/CSS, Notion para ingenieros, y *Primeros Pasos en la Nube con AWS* junto al AWS User Group San
@@ -136,7 +136,7 @@ Fase 2 y CI/CD en Claudito.
 
 <h2 id="english">🇬🇧 Florencia del Castillo</h2>
 
-**Cloud & Software · AWS.** I build serverless and containerized infrastructure, and I document the
+**Systems Analyst · Cloud & Software · AWS.** I build serverless and containerized infrastructure, and I document the
 decisions behind every project. Teaching assistant at UNViMe. Villa Mercedes, San Luis 🇦🇷
 
 ## Projects
@@ -234,7 +234,7 @@ check. Serverless end to end: CloudFront + S3, a Lambda, DynamoDB, and SAM, all 
 
 ## About me
 
-I'm studying Information Systems Engineering at UNViMe (2022-present) and I'm a **teaching assistant**
+I am a **Systems Analyst** and I am studying Information Systems Engineering at UNViMe (2022-present). I am also a **teaching assistant**
 for *Problem Solving & Algorithms* and *Programming I*. I co-founded the **UNViMe programming club**
 and gave workshops and talks at Semana de la Ingeniería: Git, HTML/CSS, Notion for engineers, and
 *Primeros Pasos en la Nube con AWS* with the AWS User Group San Luis.
