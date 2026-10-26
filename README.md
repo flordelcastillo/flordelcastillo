@@ -95,7 +95,7 @@ Lambda, DynamoDB y SAM para la infraestructura.
 
 Relevé el índice completo del digesto de la UNViMe (más de 13.000 documentos), hice OCR de las
 resoluciones escaneadas y clasifiqué por contenido las que sirven para la acreditación de Ingeniería
-en Sistemas de Información, ordenadas por anexo. El resultado es un sitio público con tabla
+en Sistemas de Información ante la CONEAU, ordenadas por anexo. El resultado es un sitio público con tabla
 ordenable, fichas con el PDF de cada resolución y líneas de tiempo que muestran qué norma deja sin
 efecto a cuál. Se publica con GitHub Pages y un script regenera todo desde los datos.
 
@@ -127,6 +127,31 @@ Lambda en Node 22 sin dependencias y DynamoDB, desplegado con SAM.
 ![AWS Lambda](https://img.shields.io/badge/Lambda-FF9900?logo=awslambda&logoColor=white) ![Amazon API Gateway](https://img.shields.io/badge/API_Gateway-FF9900?logo=amazonapigateway&logoColor=white) ![Amazon DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?logo=amazondynamodb&logoColor=white) ![Amazon Cognito](https://img.shields.io/badge/Cognito-DD344C?logo=amazoncognito&logoColor=white) ![Amazon S3](https://img.shields.io/badge/S3-FF9900?logo=amazons3&logoColor=white) ![Amazon CloudFront](https://img.shields.io/badge/CloudFront-FF9900?logo=amazoncloudfront&logoColor=white) ![AWS SAM](https://img.shields.io/badge/SAM-FF9900?logo=awssam&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?logo=nodedotjs&logoColor=white)
 
 [**▸ Probalo**](https://d1dj3drky6qwir.cloudfront.net) · desplegado
+
+### Teia Accesorios: tienda online con panel de administración
+
+La tienda de una marca de accesorios, hecha a medida: catálogo con filtros, ficha de producto, carrito,
+cupones, guía de talles y opciones de entrega, con pagos por Mercado Pago. Detrás hay un panel de
+administración propio para cargar productos con imágenes, ajustar el stock en vivo, ver pedidos y
+estados de pago y tener métricas. El webhook de Mercado Pago confirma el pago y descuenta el stock
+solo. Es un monolito Next.js con Prisma y PostgreSQL, que se despliega por su cuenta en una EC2.
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white) ![Mercado Pago](https://img.shields.io/badge/Mercado_Pago-00B1EA?logo=mercadopago&logoColor=white) ![Amazon EC2](https://img.shields.io/badge/EC2-FF9900?logo=amazonec2&logoColor=white)
+
+[**▸ Visitar**](https://teiaaccesorios.com.ar) · [código](https://github.com/flordelcastillo/tienda-luci)
+
+### Verificador de vigencia bibliográfica: acreditación de la carrera
+
+Parte del trabajo para la acreditación de Ingeniería en Sistemas de Información ante la CONEAU.
+Analiza los PDF de los programas de cada materia (formato ministerial) y clasifica cada referencia de
+la bibliografía básica y complementaria como actualizada (2016 a 2026), desactualizada o sin año
+detectable, que queda para revisión manual. Permite subir varios programas a la vez, corregir a mano
+con recálculo inmediato, exportar a Excel y PDF y comparar el historial por materia entre
+cuatrimestres. Es serverless en AWS, con login por Cognito.
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![AWS Lambda](https://img.shields.io/badge/Lambda-FF9900?logo=awslambda&logoColor=white) ![Amazon API Gateway](https://img.shields.io/badge/API_Gateway-FF9900?logo=amazonapigateway&logoColor=white) ![Amazon Cognito](https://img.shields.io/badge/Cognito-DD344C?logo=amazoncognito&logoColor=white) ![Amazon S3](https://img.shields.io/badge/S3-FF9900?logo=amazons3&logoColor=white) ![Amazon CloudFront](https://img.shields.io/badge/CloudFront-FF9900?logo=amazoncloudfront&logoColor=white) ![Amazon Bedrock](https://img.shields.io/badge/Bedrock-FF9900?logo=amazonbedrock&logoColor=white)
+
+_Uso interno de la carrera; el código está en un repositorio privado._
 
 ### Proyecto Final: agentes de IA para entender el abandono universitario
 
@@ -261,7 +286,7 @@ serverless: CloudFront + S3 for the frontend, a Lambda, DynamoDB, and SAM for th
 ### Normativa ISI UNViMe: the university's rulebook, organized for accreditation
 
 I crawled the full index of the UNViMe digest (over 13,000 documents), ran OCR on the scanned
-resolutions, and classified by content the ones that matter for the accreditation of the
+resolutions, and classified by content the ones that matter for the CONEAU accreditation of the
 Information Systems Engineering program, organized by annex. The result is a public site with a
 sortable table, a detail page with the PDF of each resolution, and timelines showing which rule
 overrides which. It's published with GitHub Pages, and one script regenerates everything from the
@@ -295,6 +320,31 @@ dependency-free Node 22 Lambda, and DynamoDB, deployed with SAM.
 ![AWS Lambda](https://img.shields.io/badge/Lambda-FF9900?logo=awslambda&logoColor=white) ![Amazon API Gateway](https://img.shields.io/badge/API_Gateway-FF9900?logo=amazonapigateway&logoColor=white) ![Amazon DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?logo=amazondynamodb&logoColor=white) ![Amazon Cognito](https://img.shields.io/badge/Cognito-DD344C?logo=amazoncognito&logoColor=white) ![Amazon S3](https://img.shields.io/badge/S3-FF9900?logo=amazons3&logoColor=white) ![Amazon CloudFront](https://img.shields.io/badge/CloudFront-FF9900?logo=amazoncloudfront&logoColor=white) ![AWS SAM](https://img.shields.io/badge/SAM-FF9900?logo=awssam&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?logo=nodedotjs&logoColor=white)
 
 [**▸ Try it**](https://d1dj3drky6qwir.cloudfront.net) · deployed
+
+### Teia Accesorios: online store with admin panel
+
+A made-to-measure store for an accessories brand: filterable catalog, product page, cart, coupons,
+size guide, and delivery options, with payments through Mercado Pago. Behind it is a custom admin
+panel to upload products with images, adjust stock live, track orders and payment status, and see
+metrics. The Mercado Pago webhook confirms the payment and deducts stock automatically. It's a Next.js
+monolith with Prisma and PostgreSQL, self-hosted on an EC2.
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white) ![Mercado Pago](https://img.shields.io/badge/Mercado_Pago-00B1EA?logo=mercadopago&logoColor=white) ![Amazon EC2](https://img.shields.io/badge/EC2-FF9900?logo=amazonec2&logoColor=white)
+
+[**▸ Visit**](https://teiaaccesorios.com.ar) · [code](https://github.com/flordelcastillo/tienda-luci)
+
+### Bibliography currency checker: program accreditation
+
+Part of the work for the accreditation of the Information Systems Engineering program before CONEAU.
+It analyzes the PDFs of each course syllabus (ministerial format) and classifies every reference in
+the basic and complementary bibliography as up to date (2016 to 2026), outdated, or no detectable
+year, which is flagged for manual review. It takes several syllabi at once, lets you fix entries by
+hand with instant recalculation, exports to Excel and PDF, and compares each course's history across
+terms. It's serverless on AWS, with Cognito login.
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![AWS Lambda](https://img.shields.io/badge/Lambda-FF9900?logo=awslambda&logoColor=white) ![Amazon API Gateway](https://img.shields.io/badge/API_Gateway-FF9900?logo=amazonapigateway&logoColor=white) ![Amazon Cognito](https://img.shields.io/badge/Cognito-DD344C?logo=amazoncognito&logoColor=white) ![Amazon S3](https://img.shields.io/badge/S3-FF9900?logo=amazons3&logoColor=white) ![Amazon CloudFront](https://img.shields.io/badge/CloudFront-FF9900?logo=amazoncloudfront&logoColor=white) ![Amazon Bedrock](https://img.shields.io/badge/Bedrock-FF9900?logo=amazonbedrock&logoColor=white)
+
+_Internal use by the program; the code is in a private repository._
 
 ### Final Project: AI agents to understand university dropout
 
