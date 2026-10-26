@@ -115,6 +115,19 @@ Es serverless de punta a punta: CloudFront + S3, una Lambda, DynamoDB y SAM, tod
 
 [**▸ Verlo**](https://dygd5d0drje17.cloudfront.net) · [código](https://github.com/flordelcastillo/codejam-landing)
 
+### Estantería: galería de proyectos del Club de Programación
+
+Una web donde los miembros del club suben sus proyectos y cualquiera puede explorarlos, filtrarlos
+por categoría, tecnologías, año o evento, y votarlos. Las cuentas usan Cognito con verificación por
+email, un grupo de administradores modera (destacar, ocultar, editar), y las portadas se suben a S3
+con URLs firmadas que fijan tipo y tamaño. Es accesible (teclado, foco visible, tema claro y oscuro,
+móvil primero). Todo corre en AWS bajo un único dominio de CloudFront, sin CORS: S3, API Gateway, una
+Lambda en Node 22 sin dependencias y DynamoDB, desplegado con SAM.
+
+![AWS Lambda](https://img.shields.io/badge/Lambda-FF9900?logo=awslambda&logoColor=white) ![Amazon API Gateway](https://img.shields.io/badge/API_Gateway-FF9900?logo=amazonapigateway&logoColor=white) ![Amazon DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?logo=amazondynamodb&logoColor=white) ![Amazon Cognito](https://img.shields.io/badge/Cognito-DD344C?logo=amazoncognito&logoColor=white) ![Amazon S3](https://img.shields.io/badge/S3-FF9900?logo=amazons3&logoColor=white) ![Amazon CloudFront](https://img.shields.io/badge/CloudFront-FF9900?logo=amazoncloudfront&logoColor=white) ![AWS SAM](https://img.shields.io/badge/SAM-FF9900?logo=awssam&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?logo=nodedotjs&logoColor=white)
+
+[**▸ Probalo**](https://d1dj3drky6qwir.cloudfront.net) · desplegado
+
 ### Proyecto Final: agentes de IA para entender el abandono universitario
 
 Mi trabajo final de la carrera, en equipo de dos y con un profesor guía (cierre en enero de 2027).
@@ -269,6 +282,19 @@ check. Serverless end to end: CloudFront + S3, a Lambda, DynamoDB, and SAM, all 
 ![AWS Lambda](https://img.shields.io/badge/Lambda-FF9900?logo=awslambda&logoColor=white) ![Amazon DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?logo=amazondynamodb&logoColor=white) ![Amazon S3](https://img.shields.io/badge/S3-FF9900?logo=amazons3&logoColor=white) ![Amazon CloudFront](https://img.shields.io/badge/CloudFront-FF9900?logo=amazoncloudfront&logoColor=white) ![Amazon Bedrock](https://img.shields.io/badge/Bedrock-FF9900?logo=amazonbedrock&logoColor=white) ![AWS SAM](https://img.shields.io/badge/SAM-FF9900?logo=awssam&logoColor=white)
 
 [**▸ See it**](https://dygd5d0drje17.cloudfront.net) · [code](https://github.com/flordelcastillo/codejam-landing)
+
+### Estantería: Programming Club project gallery
+
+A web app where club members upload their projects and anyone can browse them, filter by category,
+technology, year, or event, and vote on them. Accounts use Cognito with email verification, an admin
+group moderates (feature, hide, edit), and cover images are uploaded to S3 through signed URLs that
+pin type and size. It's accessible (keyboard, visible focus, light and dark theme, mobile first).
+Everything runs on AWS behind a single CloudFront domain, with no CORS: S3, API Gateway, a
+dependency-free Node 22 Lambda, and DynamoDB, deployed with SAM.
+
+![AWS Lambda](https://img.shields.io/badge/Lambda-FF9900?logo=awslambda&logoColor=white) ![Amazon API Gateway](https://img.shields.io/badge/API_Gateway-FF9900?logo=amazonapigateway&logoColor=white) ![Amazon DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?logo=amazondynamodb&logoColor=white) ![Amazon Cognito](https://img.shields.io/badge/Cognito-DD344C?logo=amazoncognito&logoColor=white) ![Amazon S3](https://img.shields.io/badge/S3-FF9900?logo=amazons3&logoColor=white) ![Amazon CloudFront](https://img.shields.io/badge/CloudFront-FF9900?logo=amazoncloudfront&logoColor=white) ![AWS SAM](https://img.shields.io/badge/SAM-FF9900?logo=awssam&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?logo=nodedotjs&logoColor=white)
+
+[**▸ Try it**](https://d1dj3drky6qwir.cloudfront.net) · deployed
 
 ### Final Project: AI agents to understand university dropout
 
