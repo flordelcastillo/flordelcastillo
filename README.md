@@ -11,9 +11,9 @@ Villa Mercedes, San Luis 🇦🇷
 
 ## Proyectos
 
-### Mi Plan de Estudios — planificador académico
+### Mi Plan de Estudios: planificador académico
 
-Te dice qué materias podés cursar, qué te está trabando y qué te falta para recibirte — y te avisa
+Te dice qué materias podés cursar, qué te está trabando y qué te falta para recibirte, y te avisa
 por WhatsApp cuando se acerca una fecha del calendario académico. Modela el plan de estudios como un
 grafo de correlativas e importa tu historial parseando el reporte de SIU Guaraní o un Excel, así no
 cargás materia por materia. Corre en una EC2 con Docker Compose: API (Node + Express + MongoDB) y
@@ -24,13 +24,13 @@ cron revisa el calendario y notifica por WhatsApp (Baileys) y email.
 
 [**▸ Probalo**](https://miplandeestudios.com.ar) · en producción, con usuarios reales
 
-### Claudito — optimizador de CVs con IA
+### Claudito: optimizador de CVs con IA
 
 Subís un CV, pegás una descripción de puesto, y te devuelve un score de match, sugerencias concretas
-que aceptás o descartás una por una, y un PDF en formato Harvard listo para mandar — con una
+que aceptás o descartás una por una, y un PDF en formato Harvard listo para mandar, con una
 restricción central: **no inventa nada**, todo lo que escribe tiene que estar respaldado por el CV
 original. Es 100% serverless: nueve Lambdas, dos llamadas a Bedrock y ninguna base de datos, porque
-sin login no hay estado que persistir — una sesión es una carpeta en S3 que se autodestruye en una
+sin login no hay estado que persistir: una sesión es una carpeta en S3 que se autodestruye en una
 hora. Los PDFs escaneados se procesan con OCR async (Textract); IaC con SAM y deploy por CI/CD con
 OIDC.
 
@@ -38,28 +38,28 @@ OIDC.
 
 [**▸ Probalo**](https://d1u1sqpu5ny5ot.cloudfront.net) · desplegado
 
-### Dockyard — plataforma de deploy tipo Render/Railway
+### Dockyard: plataforma de deploy tipo Render/Railway
 
 Conectás un repositorio, hacés `git push`, y tu app queda viva en su propio subdominio con HTTPS
 válido. Es un proyecto de infraestructura pensado para ser defendible pieza por pieza: en vez de usar
-un PaaS, lo construye — build de imágenes Docker, registry propio (ECR), reverse proxy que rutea por
+un PaaS, lo construye: build de imágenes Docker, registry propio (ECR), reverse proxy que rutea por
 subdominio, TLS wildcard, y separación control plane / data plane sobre una misma EC2. **Hoy está en
 Fase 0:** la infraestructura es reproducible desde cero con CloudFormation (EC2, ECR, IAM, alarmas de
-presupuesto), TLS wildcard vía ACME DNS-01, Nginx ruteando por `Host` y CI con OIDC — sin access keys
-estáticas — pero los deploys todavía se disparan a mano. El pipeline automático (webhook → build →
+presupuesto), TLS wildcard vía ACME DNS-01, Nginx ruteando por `Host` y CI con OIDC (sin access keys
+estáticas), pero los deploys todavía se disparan a mano. El pipeline automático (webhook → build →
 deploy) es la Fase 1.
 
 ![CloudFormation](https://img.shields.io/badge/CloudFormation-FF9900?logo=amazonaws&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![Amazon EC2](https://img.shields.io/badge/EC2-FF9900?logo=amazonec2&logoColor=white) ![Amazon ECR](https://img.shields.io/badge/ECR-FF9900?logo=amazonecr&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white)
 
 [**▸ Demo**](https://demo.dockyard.dpdns.org) · Fase 0, infraestructura reproducible
 
-### Costos — gestión para PyMEs gastronómicas
+### Costos: gestión para PyMEs gastronómicas
 
 Para que el dueño o dueña de un local gastronómico administre su negocio sin saber de contabilidad:
 ventas, gastos, costos, punto de equilibrio, facturación electrónica (ARCA/WSFE) y un asistente que
 responde en lenguaje natural con los números reales del negocio. Se cargan datos a mano, con una foto
 del ticket (la IA los extrae y clasifica) o con el CSV de "Mis Comprobantes" de ARCA en lote.
-Frontend React + Vite con el estado en el navegador; una sola Lambda con dos integraciones — Bedrock
+Frontend React + Vite con el estado en el navegador; una sola Lambda con dos integraciones: Bedrock
 (Claude) para la IA y Afip SDK para ARCA. Regla de diseño: se guardan solo productos, ventas y
 comprobantes; costo unitario, CIF, equilibrio y alertas se derivan y nunca se persisten.
 
@@ -108,7 +108,7 @@ Es serverless de punta a punta: CloudFront + S3, una Lambda, DynamoDB y SAM, tod
 
 ## Sobre mí
 
-Estudio Ingeniería en Sistemas de Información en la UNViMe (2022–presente) y soy **ayudante de
+Estudio Ingeniería en Sistemas de Información en la UNViMe (2022-presente) y soy **ayudante de
 cátedra** en *Expresión y Resolución de Problemas y Algoritmos* y *Programación I*. Co-fundé el
 **Club de Programación de la UNViMe** y di talleres y charlas en la Semana de la Ingeniería: Git,
 HTML/CSS, Notion para ingenieros, y *Primeros Pasos en la Nube con AWS* junto al AWS User Group San
@@ -141,9 +141,9 @@ decisions behind every project. Teaching assistant at UNViMe. Villa Mercedes, Sa
 
 ## Projects
 
-### Mi Plan de Estudios — academic planner
+### Mi Plan de Estudios: academic planner
 
-Tells you what courses you can take, what's blocking you, and what's left before you graduate — and
+Tells you what courses you can take, what's blocking you, and what's left before you graduate, and
 pings you on WhatsApp when an academic-calendar date is coming up. It models the curriculum as a
 prerequisite graph and imports your record by parsing the SIU Guaraní report or an Excel file, so you
 don't type subject by subject. It runs on one EC2 box with Docker Compose: API (Node + Express +
@@ -154,12 +154,12 @@ A cron checks the calendar and notifies over WhatsApp (Baileys) and email.
 
 [**▸ Try it**](https://miplandeestudios.com.ar) · in production, with real users
 
-### Claudito — AI CV optimizer
+### Claudito: AI CV optimizer
 
 Upload a CV, paste a job description, and get a match score, concrete suggestions you accept or
-dismiss one by one, and a ready-to-send Harvard-format PDF — with one core constraint: **it invents
+dismiss one by one, and a ready-to-send Harvard-format PDF, with one core constraint: **it invents
 nothing**, everything it writes must be backed by the original CV. It's fully serverless: nine
-Lambdas, two Bedrock calls, and no database, because without login there's no state to persist — a
+Lambdas, two Bedrock calls, and no database, because without login there's no state to persist: a
 session is an S3 folder that deletes itself in an hour. Scanned PDFs are handled with async OCR
 (Textract); IaC with SAM and CI/CD deploys over OIDC.
 
@@ -167,27 +167,27 @@ session is an S3 folder that deletes itself in an hour. Scanned PDFs are handled
 
 [**▸ Try it**](https://d1u1sqpu5ny5ot.cloudfront.net) · deployed
 
-### Dockyard — a Render/Railway-style deploy platform
+### Dockyard: a Render/Railway-style deploy platform
 
 Connect a repo, `git push`, and your app is live on its own subdomain with valid HTTPS. It's an
-infrastructure project meant to be defensible piece by piece: instead of using a PaaS, it builds one
-— Docker image builds, its own registry (ECR), a reverse proxy that routes by subdomain, wildcard
+infrastructure project meant to be defensible piece by piece: instead of using a PaaS, it builds one:
+Docker image builds, its own registry (ECR), a reverse proxy that routes by subdomain, wildcard
 TLS, and a control-plane / data-plane split on a single EC2. **It's at Phase 0 today:** the
 infrastructure is reproducible from scratch with CloudFormation (EC2, ECR, IAM, budget alarms),
-wildcard TLS via ACME DNS-01, Nginx routing by `Host`, and CI over OIDC — no static access keys — but
+wildcard TLS via ACME DNS-01, Nginx routing by `Host`, and CI over OIDC (no static access keys), but
 deploys are still triggered by hand. The automated pipeline (webhook → build → deploy) is Phase 1.
 
 ![CloudFormation](https://img.shields.io/badge/CloudFormation-FF9900?logo=amazonaws&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![Amazon EC2](https://img.shields.io/badge/EC2-FF9900?logo=amazonec2&logoColor=white) ![Amazon ECR](https://img.shields.io/badge/ECR-FF9900?logo=amazonecr&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white)
 
 [**▸ Demo**](https://demo.dockyard.dpdns.org) · Phase 0, reproducible infrastructure
 
-### Costos — management for small restaurants
+### Costos: management for small restaurants
 
 So a restaurant owner can run their business without knowing accounting: sales, expenses, costs,
 break-even, electronic invoicing (ARCA/WSFE), and an assistant that answers in plain language using
 the business's real numbers. Data is entered by hand, by photo of the receipt (AI extracts and
 classifies it), or from the ARCA "Mis Comprobantes" CSV in bulk. React + Vite frontend with state in
-the browser; a single Lambda with two integrations — Bedrock (Claude) for AI and the Afip SDK for
+the browser; a single Lambda with two integrations: Bedrock (Claude) for AI and the Afip SDK for
 ARCA. Design rule: only products, sales, and receipts are stored; unit cost, overhead, break-even,
 and alerts are all derived and never persisted.
 
@@ -234,7 +234,7 @@ check. Serverless end to end: CloudFront + S3, a Lambda, DynamoDB, and SAM, all 
 
 ## About me
 
-I'm studying Information Systems Engineering at UNViMe (2022–present) and I'm a **teaching assistant**
+I'm studying Information Systems Engineering at UNViMe (2022-present) and I'm a **teaching assistant**
 for *Problem Solving & Algorithms* and *Programming I*. I co-founded the **UNViMe programming club**
 and gave workshops and talks at Semana de la Ingeniería: Git, HTML/CSS, Notion for engineers, and
 *Primeros Pasos en la Nube con AWS* with the AWS User Group San Luis.
