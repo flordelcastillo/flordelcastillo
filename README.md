@@ -17,9 +17,9 @@ Te dice qué materias podés cursar, qué te está trabando y qué te falta para
 cuando se acerca una fecha del calendario académico o vence una regularidad. Modela el plan de
 estudios como un grafo de correlativas, con el catálogo de planes de SIU Guaraní (viejos y nuevos),
 e importa tu historial desde el reporte de Guaraní (también en PDF) o un Excel, verificándolo contra
-el plan oficial. Suma escenarios de "qué pasa si", una constancia de avance imprimible, un enlace de
-solo lectura para compartir el avance con un tutor y un panel de coordinación de carrera, con
-protección de cohortes chicas. Los avisos salen por WhatsApp, Telegram o email. Corre en una EC2 con
+el plan oficial. Suma escenarios de "qué pasa si", una constancia de avance imprimible y un enlace de
+solo lectura para compartir el avance con un tutor. Los avisos salen por WhatsApp, Telegram o email.
+Corre en una EC2 con
 Docker Compose: API (Node + Express + MongoDB) y frontend en contenedores separados detrás de Nginx,
 con dominio propio y TLS de Let's Encrypt. Un pipeline de GitHub Actions con OIDC sube las imágenes a
 ECR y despliega por SSM, sin SSH ni claves guardadas.
@@ -129,18 +129,19 @@ HTML/CSS, Notion para ingenieros, y *Primeros Pasos en la Nube con AWS* junto al
 Luis.
 
 **Cómo llegué:** freeCodeCamp → backend con Java en la Universidad Globant (beca Code Your Future) →
-AWS Re/Start en Potrero Digital → [**AWS Certified Cloud Practitioner**](https://www.credly.com/badges/736b6e0f-4c60-4a82-aa06-105653a22aae/public_url) (enero 2026). Ahora: el CodeJam
+AWS Re/Start en Potrero Digital → [**AWS Certified Cloud Practitioner**](https://www.credly.com/badges/736b6e0f-4c60-4a82-aa06-105653a22aae/public_url) (enero 2026) → AWS Academy Educator. Ahora: el CodeJam
 UNViMe (30/10) y mi Proyecto Final de la carrera.
 
 ### Herramientas
 
 | | |
 |---|---|
-| **Cloud** | Lambda · S3 · Bedrock · CloudFront · API Gateway · EC2 · ECR · Textract · CloudWatch · IAM · VPC |
+| **Cloud** | Lambda · S3 · Bedrock · CloudFront · API Gateway · EC2 · ECR · ECS Fargate · Textract · Cognito · SSM · CloudWatch · IAM · VPC |
+| **Datos** | DynamoDB · MongoDB · PostgreSQL |
 | **IaC** | AWS SAM · CloudFormation |
 | **Lenguajes** | Python · TypeScript · JavaScript · SQL · Bash |
-| **Frontend** | React · Vite · Tailwind · Zustand |
-| **Ops** | Docker · Docker Compose · GitHub Actions (OIDC) · Nginx · Linux · DNS |
+| **Frontend** | React · Vite · Tailwind · Zustand · MapLibre |
+| **Ops** | Docker · Docker Compose · GitHub Actions (OIDC) · Nginx · TLS (Let's Encrypt) · Linux · DNS |
 
 ### Contacto
 
@@ -162,8 +163,8 @@ pings you when an academic-calendar date is coming up or a course's regular stat
 expire. It models the curriculum as a prerequisite graph, with the SIU Guaraní catalog of study
 plans (old and new), and imports your record from the Guaraní report (PDF too) or an Excel file,
 checking it against the official plan. It adds "what if" scenarios, a printable progress
-certificate, a read-only link to share your progress with a tutor, and a program-coordination
-dashboard that protects small cohorts. Alerts go out over WhatsApp, Telegram, or email. It runs on
+certificate, and a read-only link to share your progress with a tutor. Alerts go out over
+WhatsApp, Telegram, or email. It runs on
 one EC2 box with Docker Compose: API (Node + Express + MongoDB) and frontend in separate containers
 behind Nginx, with its own domain and Let's Encrypt TLS. A GitHub Actions pipeline using OIDC pushes
 the images to ECR and deploys through SSM, with no SSH and no stored keys.
@@ -269,7 +270,7 @@ and gave workshops and talks at Semana de la Ingeniería: Git, HTML/CSS, Notion 
 *Primeros Pasos en la Nube con AWS* with the AWS User Group San Luis.
 
 **How I got here:** freeCodeCamp → Java backend at Universidad Globant (Code Your Future scholarship)
-→ AWS Re/Start at Potrero Digital → [**AWS Certified Cloud Practitioner**](https://www.credly.com/badges/736b6e0f-4c60-4a82-aa06-105653a22aae/public_url) (January 2026). Right now:
+→ AWS Re/Start at Potrero Digital → [**AWS Certified Cloud Practitioner**](https://www.credly.com/badges/736b6e0f-4c60-4a82-aa06-105653a22aae/public_url) (January 2026) → AWS Academy Educator. Right now:
 the UNViMe CodeJam (Oct 30) and my degree final project.
 
 **Contact:** [LinkedIn](https://linkedin.com/in/flordelcastillo) ·
