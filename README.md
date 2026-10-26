@@ -309,9 +309,11 @@ English B2
 <br />
 
 <a href="https://www.credly.com/badges/736b6e0f-4c60-4a82-aa06-105653a22aae/public_url"><img src="https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS Certified Cloud Practitioner" width="120" /></a>
+<a href="https://www.credly.com/badges/501c27bc-4dd2-4245-a4a7-c43c5b40bc1b/public_url"><img src="https://images.credly.com/size/340x340/images/44e2c252-5d19-4574-9646-005f7225bf53/image.png" alt="AWS re/Start Graduate" width="120" /></a>
+<a href="https://www.credly.com/badges/723e83a1-657c-4ad7-b87b-3c01e382473b/public_url"><img src="https://images.credly.com/size/340x340/images/e7bf6727-22cf-45d6-ad9c-76ab57c3f11b/image.png" alt="AWS Academy Educator" width="120" /></a>
 
 <br />
 
-<sub><b>AWS Certified Cloud Practitioner</b> · 2026</sub>
+<sub><b>AWS Certified Cloud Practitioner</b> (2026) · <b>AWS re/Start Graduate</b> · <b>AWS Academy Educator</b></sub>
 
 </div>
