@@ -138,7 +138,9 @@ solo. Es un monolito Next.js con Prisma y PostgreSQL, que se despliega por su cu
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white) ![Mercado Pago](https://img.shields.io/badge/Mercado_Pago-00B1EA?logo=mercadopago&logoColor=white) ![Amazon EC2](https://img.shields.io/badge/EC2-FF9900?logo=amazonec2&logoColor=white)
 
-[**▸ Visitar**](https://teiaaccesorios.com.ar) · [código](https://github.com/flordelcastillo/tienda-luci)
+[**▸ Visitar**](https://teiaaccesorios.com.ar) · en línea
+
+_El código está en un repositorio privado._
 
 ### Verificador de vigencia bibliográfica: acreditación de la carrera
 
@@ -331,7 +333,9 @@ monolith with Prisma and PostgreSQL, self-hosted on an EC2.
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white) ![Mercado Pago](https://img.shields.io/badge/Mercado_Pago-00B1EA?logo=mercadopago&logoColor=white) ![Amazon EC2](https://img.shields.io/badge/EC2-FF9900?logo=amazonec2&logoColor=white)
 
-[**▸ Visit**](https://teiaaccesorios.com.ar) · [code](https://github.com/flordelcastillo/tienda-luci)
+[**▸ Visit**](https://teiaaccesorios.com.ar) · live
+
+_The code is in a private repository._
 
 ### Bibliography currency checker: program accreditation
 
