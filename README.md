@@ -67,6 +67,31 @@ comprobantes; costo unitario, CIF, equilibrio y alertas se derivan y nunca se pe
 
 _Estado: corre local contra la Lambda; todavía sin instancia pública._
 
+### Seguidor-Colectivo: colectivos de Villa Mercedes en tiempo real
+
+Un mapa a pantalla completa que muestra dónde está cada colectivo y cuánto falta para que llegue a
+tu parada, más un planificador de viajes. La fuente (ColectivoYa) trae datos que no son confiables
+por sí solos, así que la verdad la pone el GPS: guarda los viajes reales en S3 y de ahí aprende los
+recorridos de cada ramal, los valida contra las posiciones y oculta las paradas por las que ya no
+pasa nadie. También reasigna el sentido (ida o vuelta), que la fuente casi nunca informa bien, y
+compara contra la grilla oficial de horarios. Es serverless: CloudFront + S3 para el frontend, una
+Lambda, DynamoDB y SAM para la infraestructura.
+
+![AWS Lambda](https://img.shields.io/badge/Lambda-FF9900?logo=awslambda&logoColor=white) ![Amazon DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?logo=amazondynamodb&logoColor=white) ![Amazon S3](https://img.shields.io/badge/S3-FF9900?logo=amazons3&logoColor=white) ![Amazon CloudFront](https://img.shields.io/badge/CloudFront-FF9900?logo=amazoncloudfront&logoColor=white) ![AWS SAM](https://img.shields.io/badge/SAM-FF9900?logo=awssam&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?logo=nodedotjs&logoColor=white)
+
+[**▸ Probalo**](https://d37602x6omnenw.cloudfront.net) · desplegado
+
+### Normativa ISI UNViMe: el digesto, ordenado para acreditar
+
+Relevé el digesto de la UNViMe (miles de resoluciones escaneadas), les hice OCR y las clasifiqué por
+anexo de la acreditación de Ingeniería en Sistemas de Información. El resultado es un sitio público
+con tabla ordenable, fichas con el PDF de cada resolución y líneas de tiempo que muestran qué norma
+deja sin efecto a cuál. Se publica con GitHub Pages y un script regenera todo desde los datos.
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB) ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white) ![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?logo=githubpages&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white)
+
+[**▸ Verlo**](https://flordelcastillo.github.io/normativa-isi-unvime/) · [código](https://github.com/flordelcastillo/normativa-isi-unvime)
+
 ---
 
 ## Sobre mí
@@ -157,6 +182,31 @@ and alerts are all derived and never persisted.
 ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB) ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white) ![Amazon Bedrock](https://img.shields.io/badge/Bedrock-FF9900?logo=amazonbedrock&logoColor=white) ![PWA](https://img.shields.io/badge/PWA-5A0FC8?logo=pwa&logoColor=white) ![AWS Lambda](https://img.shields.io/badge/Lambda-FF9900?logo=awslambda&logoColor=white) ![API Gateway](https://img.shields.io/badge/API_Gateway-FF9900?logo=amazonapigateway&logoColor=white)
 
 _Status: runs locally against the Lambda; no hosted instance yet._
+
+### Seguidor-Colectivo: live buses in Villa Mercedes
+
+A full-screen map showing where each bus is and how long until it reaches your stop, plus a trip
+planner. The upstream source (ColectivoYa) isn't reliable on its own, so the GPS is the source of
+truth: it stores real trips in S3, learns each route from them, validates the routes against the
+positions, and hides stops nobody serves anymore. It also reassigns direction (outbound or return),
+which the source rarely reports correctly, and checks everything against the official timetable. It's
+serverless: CloudFront + S3 for the frontend, a Lambda, DynamoDB, and SAM for the infrastructure.
+
+![AWS Lambda](https://img.shields.io/badge/Lambda-FF9900?logo=awslambda&logoColor=white) ![Amazon DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?logo=amazondynamodb&logoColor=white) ![Amazon S3](https://img.shields.io/badge/S3-FF9900?logo=amazons3&logoColor=white) ![Amazon CloudFront](https://img.shields.io/badge/CloudFront-FF9900?logo=amazoncloudfront&logoColor=white) ![AWS SAM](https://img.shields.io/badge/SAM-FF9900?logo=awssam&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?logo=nodedotjs&logoColor=white)
+
+[**▸ Try it**](https://d37602x6omnenw.cloudfront.net) · deployed
+
+### Normativa ISI UNViMe: the university's rulebook, organized for accreditation
+
+I crawled the UNViMe digest (thousands of scanned resolutions), ran OCR on them, and classified them
+by the accreditation annexes of the Information Systems Engineering program. The result is a public
+site with a sortable table, a detail page with the PDF of each resolution, and timelines showing
+which rule overrides which. It's published with GitHub Pages, and one script regenerates everything
+from the data.
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB) ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white) ![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?logo=githubpages&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white)
+
+[**▸ See it**](https://flordelcastillo.github.io/normativa-isi-unvime/) · [code](https://github.com/flordelcastillo/normativa-isi-unvime)
 
 ## About me
 
