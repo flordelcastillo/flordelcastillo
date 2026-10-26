@@ -92,6 +92,18 @@ deja sin efecto a cuál. Se publica con GitHub Pages y un script regenera todo d
 
 [**▸ Verlo**](https://flordelcastillo.github.io/normativa-isi-unvime/) · [código](https://github.com/flordelcastillo/normativa-isi-unvime)
 
+### CodeJam UNViMe 2026: landing y muro de fotos en vivo
+
+La landing oficial del CodeJam (30/10/2026) y un muro que se actualiza solo durante la jornada: la
+gente sube una foto desde el celular con el marco del evento, un panel de admin la modera y aparece en
+el proyector con un QR para sumarse. Suma un ranking de equipos que nace oculto hasta que el jurado lo
+publica, y un entrenador de pitch con IA (Claude en Bedrock) con topes por IP para controlar el gasto.
+Es serverless de punta a punta: CloudFront + S3, una Lambda, DynamoDB y SAM, todo pay-per-use.
+
+![AWS Lambda](https://img.shields.io/badge/Lambda-FF9900?logo=awslambda&logoColor=white) ![Amazon DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?logo=amazondynamodb&logoColor=white) ![Amazon S3](https://img.shields.io/badge/S3-FF9900?logo=amazons3&logoColor=white) ![Amazon CloudFront](https://img.shields.io/badge/CloudFront-FF9900?logo=amazoncloudfront&logoColor=white) ![Amazon Bedrock](https://img.shields.io/badge/Bedrock-FF9900?logo=amazonbedrock&logoColor=white) ![AWS SAM](https://img.shields.io/badge/SAM-FF9900?logo=awssam&logoColor=white)
+
+[**▸ Verlo**](https://dygd5d0drje17.cloudfront.net) · desplegado
+
 ---
 
 ## Sobre mí
@@ -207,6 +219,18 @@ from the data.
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB) ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white) ![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?logo=githubpages&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white)
 
 [**▸ See it**](https://flordelcastillo.github.io/normativa-isi-unvime/) · [code](https://github.com/flordelcastillo/normativa-isi-unvime)
+
+### CodeJam UNViMe 2026: landing and live photo wall
+
+The official landing page for CodeJam (Oct 30, 2026) and a wall that updates itself during the event:
+people upload a photo from their phone with the event frame, an admin panel moderates it, and it
+shows up on the projector with a QR code to join in. It adds a team ranking that stays hidden until
+the judges publish it, and an AI pitch coach (Claude on Bedrock) with per-IP limits to keep costs in
+check. Serverless end to end: CloudFront + S3, a Lambda, DynamoDB, and SAM, all pay-per-use.
+
+![AWS Lambda](https://img.shields.io/badge/Lambda-FF9900?logo=awslambda&logoColor=white) ![Amazon DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?logo=amazondynamodb&logoColor=white) ![Amazon S3](https://img.shields.io/badge/S3-FF9900?logo=amazons3&logoColor=white) ![Amazon CloudFront](https://img.shields.io/badge/CloudFront-FF9900?logo=amazoncloudfront&logoColor=white) ![Amazon Bedrock](https://img.shields.io/badge/Bedrock-FF9900?logo=amazonbedrock&logoColor=white) ![AWS SAM](https://img.shields.io/badge/SAM-FF9900?logo=awssam&logoColor=white)
+
+[**▸ See it**](https://dygd5d0drje17.cloudfront.net) · deployed
 
 ## About me
 
