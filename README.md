@@ -102,7 +102,7 @@ Es serverless de punta a punta: CloudFront + S3, una Lambda, DynamoDB y SAM, tod
 
 ![AWS Lambda](https://img.shields.io/badge/Lambda-FF9900?logo=awslambda&logoColor=white) ![Amazon DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?logo=amazondynamodb&logoColor=white) ![Amazon S3](https://img.shields.io/badge/S3-FF9900?logo=amazons3&logoColor=white) ![Amazon CloudFront](https://img.shields.io/badge/CloudFront-FF9900?logo=amazoncloudfront&logoColor=white) ![Amazon Bedrock](https://img.shields.io/badge/Bedrock-FF9900?logo=amazonbedrock&logoColor=white) ![AWS SAM](https://img.shields.io/badge/SAM-FF9900?logo=awssam&logoColor=white)
 
-[**▸ Verlo**](https://dygd5d0drje17.cloudfront.net) · desplegado
+[**▸ Verlo**](https://dygd5d0drje17.cloudfront.net) · [código](https://github.com/flordelcastillo/codejam-landing)
 
 ---
 
@@ -230,7 +230,7 @@ check. Serverless end to end: CloudFront + S3, a Lambda, DynamoDB, and SAM, all 
 
 ![AWS Lambda](https://img.shields.io/badge/Lambda-FF9900?logo=awslambda&logoColor=white) ![Amazon DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?logo=amazondynamodb&logoColor=white) ![Amazon S3](https://img.shields.io/badge/S3-FF9900?logo=amazons3&logoColor=white) ![Amazon CloudFront](https://img.shields.io/badge/CloudFront-FF9900?logo=amazoncloudfront&logoColor=white) ![Amazon Bedrock](https://img.shields.io/badge/Bedrock-FF9900?logo=amazonbedrock&logoColor=white) ![AWS SAM](https://img.shields.io/badge/SAM-FF9900?logo=awssam&logoColor=white)
 
-[**▸ See it**](https://dygd5d0drje17.cloudfront.net) · deployed
+[**▸ See it**](https://dygd5d0drje17.cloudfront.net) · [code](https://github.com/flordelcastillo/codejam-landing)
 
 ## About me
 
