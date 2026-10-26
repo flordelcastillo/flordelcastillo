@@ -54,14 +54,11 @@ privados), detecta el stack (Node, Python o Go), construye la imagen Docker, la 
 viva detrás de Nginx, con variables de entorno cifradas y secretos en SSM. Un loop de reconciliación
 recupera containers caídos y detecta crash loops, y un dashboard muestra logs en vivo y permite
 rollback de un click. Todo es reproducible desde cero con CloudFormation, con TLS wildcard vía ACME
-DNS-01 y CI con OIDC, sin access keys estáticas. **Fases 0 a 3 completas.** La Fase 4 migró el
-runtime a ECS Fargate + ALB como segunda implementación de la misma interfaz, sin tocar el pipeline.
-Lo levanté, lo verifiqué y lo desmonté, porque el ALB solo ya cuesta unos 16 USD al mes, y quedó
-documentado en un post-mortem.
+DNS-01 y CI con OIDC, sin access keys estáticas. **Fases 0 a 3 completas.**
 
-![CloudFormation](https://img.shields.io/badge/CloudFormation-FF9900?logo=amazonaws&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![Amazon EC2](https://img.shields.io/badge/EC2-FF9900?logo=amazonec2&logoColor=white) ![Amazon ECR](https://img.shields.io/badge/ECR-FF9900?logo=amazonecr&logoColor=white) ![Amazon ECS](https://img.shields.io/badge/ECS-FF9900?logo=amazonecs&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white)
+![CloudFormation](https://img.shields.io/badge/CloudFormation-FF9900?logo=amazonaws&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![Amazon EC2](https://img.shields.io/badge/EC2-FF9900?logo=amazonec2&logoColor=white) ![Amazon ECR](https://img.shields.io/badge/ECR-FF9900?logo=amazonecr&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white)
 
-[**▸ Demo**](https://demo.dockyard.dpdns.org) · Fases 0 a 3 completas, Fase 4 documentada
+[**▸ Demo**](https://demo.dockyard.dpdns.org) · Fases 0 a 3 completas
 
 ### Costos: gestión para PyMEs gastronómicas
 
@@ -117,6 +114,20 @@ Es serverless de punta a punta: CloudFront + S3, una Lambda, DynamoDB y SAM, tod
 ![AWS Lambda](https://img.shields.io/badge/Lambda-FF9900?logo=awslambda&logoColor=white) ![Amazon DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?logo=amazondynamodb&logoColor=white) ![Amazon S3](https://img.shields.io/badge/S3-FF9900?logo=amazons3&logoColor=white) ![Amazon CloudFront](https://img.shields.io/badge/CloudFront-FF9900?logo=amazoncloudfront&logoColor=white) ![Amazon Bedrock](https://img.shields.io/badge/Bedrock-FF9900?logo=amazonbedrock&logoColor=white) ![AWS SAM](https://img.shields.io/badge/SAM-FF9900?logo=awssam&logoColor=white)
 
 [**▸ Verlo**](https://dygd5d0drje17.cloudfront.net) · [código](https://github.com/flordelcastillo/codejam-landing)
+
+### Proyecto Final: agentes de IA para entender el abandono universitario
+
+Mi trabajo final de la carrera, en equipo de dos y con un profesor guía (cierre en enero de 2027).
+Es una cadena de agentes que toma datos académicos del sistema de gestión (SIU Guaraní), los integra y
+los preprocesa, entrena modelos con AutoML para predecir quién tiene riesgo de abandonar en los
+primeros años y, lo más importante, **explica por qué**. A mí me tocan el agente de preprocesamiento y
+el de interpretabilidad (SHAP, PDP, LIME y contrafactuales con DiCE), que muestran qué variables
+pesan y qué podría cambiar en un caso concreto. Un chequeo automático evita que un modelo flojo pase
+como bueno, y los datos de estudiantes no se publican ni se suben al repositorio. Se orquesta con LangGraph; los modelos se entrenan con AutoGluon.
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+_Estado: en desarrollo; el código está en un repositorio privado del equipo._
 
 ---
 
@@ -199,14 +210,11 @@ stack (Node, Python, or Go), builds the Docker image, pushes it to ECR, and brin
 Nginx, with encrypted environment variables and secrets in SSM. A reconciliation loop recovers
 crashed containers and detects crash loops, and a dashboard shows live logs and one-click rollback.
 Everything is reproducible from scratch with CloudFormation, with wildcard TLS via ACME DNS-01 and CI
-over OIDC, no static access keys. **Phases 0 to 3 are complete.** Phase 4 migrated the runtime to ECS
-Fargate + ALB as a second implementation of the same interface, without touching the pipeline. I
-stood it up, verified it, and tore it down, because the ALB alone costs about 16 USD a month, and it's
-documented in a post-mortem.
+over OIDC, no static access keys. **Phases 0 to 3 are complete.**
 
-![CloudFormation](https://img.shields.io/badge/CloudFormation-FF9900?logo=amazonaws&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![Amazon EC2](https://img.shields.io/badge/EC2-FF9900?logo=amazonec2&logoColor=white) ![Amazon ECR](https://img.shields.io/badge/ECR-FF9900?logo=amazonecr&logoColor=white) ![Amazon ECS](https://img.shields.io/badge/ECS-FF9900?logo=amazonecs&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white)
+![CloudFormation](https://img.shields.io/badge/CloudFormation-FF9900?logo=amazonaws&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) ![Amazon EC2](https://img.shields.io/badge/EC2-FF9900?logo=amazonec2&logoColor=white) ![Amazon ECR](https://img.shields.io/badge/ECR-FF9900?logo=amazonecr&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white)
 
-[**▸ Demo**](https://demo.dockyard.dpdns.org) · Phases 0 to 3 complete, Phase 4 documented
+[**▸ Demo**](https://demo.dockyard.dpdns.org) · Phases 0 to 3 complete
 
 ### Costos: management for small restaurants
 
@@ -261,6 +269,21 @@ check. Serverless end to end: CloudFront + S3, a Lambda, DynamoDB, and SAM, all 
 ![AWS Lambda](https://img.shields.io/badge/Lambda-FF9900?logo=awslambda&logoColor=white) ![Amazon DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?logo=amazondynamodb&logoColor=white) ![Amazon S3](https://img.shields.io/badge/S3-FF9900?logo=amazons3&logoColor=white) ![Amazon CloudFront](https://img.shields.io/badge/CloudFront-FF9900?logo=amazoncloudfront&logoColor=white) ![Amazon Bedrock](https://img.shields.io/badge/Bedrock-FF9900?logo=amazonbedrock&logoColor=white) ![AWS SAM](https://img.shields.io/badge/SAM-FF9900?logo=awssam&logoColor=white)
 
 [**▸ See it**](https://dygd5d0drje17.cloudfront.net) · [code](https://github.com/flordelcastillo/codejam-landing)
+
+### Final Project: AI agents to understand university dropout
+
+My degree's final project, done in a team of two with an advisor (due January 2027). It's a chain of
+agents that takes academic data from the student management system (SIU Guaraní), integrates and
+preprocesses it, trains AutoML models to predict who is at risk of dropping out in the first years
+and, most importantly, **explains why**. I own the preprocessing agent and the interpretability agent
+(SHAP, PDP, LIME, and counterfactuals with DiCE), which show which variables matter and what could
+change in a specific case. An automatic check keeps a weak model from passing as a good one, and
+student data is never published or pushed to the repository. It's orchestrated
+with LangGraph, and the models are trained with AutoGluon.
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+_Status: in development; the code lives in a private team repository._
 
 ## About me
 
